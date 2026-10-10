@@ -25,7 +25,7 @@ An asynchronous Python web crawler that downloads webpages, extracts structured 
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/web-crawler.git
+git clone https://github.com/uruj04/web-crawler.git
 cd web-crawler
 pip install -r requirements.txt
 cp .env.example .env
@@ -141,4 +141,4 @@ See `output/crawl_result.json` and `output/crawl_result.csv` after running `pyth
 ## Author
 
 **<Your Name>** — Python Internship, Algoryx
-[LinkedIn](https://linkedin.com/in/<your-profile>) · [GitHub](https://github.com/<your-username>)
+[LinkedIn](https://linkedin.com/in/mohd-uruj-a1207038a) · [GitHub](https://github.com/uruj04)
