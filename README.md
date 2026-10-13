@@ -59,6 +59,31 @@ python main.py keywords --top 15
 
 Results are written to `output/crawl_result.json` and `output/crawl_result.csv`.
 
+## Live web demo
+
+The repository includes a Streamlit web demo that runs the same asynchronous crawler,
+shows its crawl statistics and extracted pages, and makes JSON and CSV exports available
+for download. To prevent the public demo from being used to crawl arbitrary targets, it
+is intentionally restricted to `books.toscrape.com`, a site made for scraping practice.
+The CLI version continues to support permitted public seed URLs.
+
+Run the demo locally:
+
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+### Deploy a public demo
+
+Deploy the included Docker configuration as a Web Service on [Render](https://render.com/):
+
+1. Connect your GitHub account to Render and select `uruj04/web-crawler`.
+2. Select **Docker** as the runtime and choose the **Free** compute plan.
+3. Create the service. Render builds the image and provides a public `onrender.com` URL.
+
+The free service may take a short time to start after 15 minutes without a visitor.
+
 ## Configuration (`.env`)
 
 | Variable | Default | Purpose |
